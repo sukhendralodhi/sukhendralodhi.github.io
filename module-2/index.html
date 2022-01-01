@@ -1,26 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Responsive Page</title>
     <link rel="stylesheet" href="styles.css">
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head> 
+
 <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Food,LLC</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-cutlery">Chicken</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-info-sign">Beef</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="glyphicon glyphicon-certificate">Sushi</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
     <div class="row">
         <h1>Our Menu</h1>
         <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, laudantium! Ratione, deleniti, nemo voluptatum nulla beatae magnam provident veritatis perspiciatis quidem at tempora odit possimus fuga. Sint fugit doloremque ipsa quod eius, ipsam provident magnam.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, laudantium! Ratione, deleniti, nemo
+                voluptatum nulla beatae magnam provident veritatis perspiciatis quidem at tempora odit possimus fuga.
+                Sint fugit doloremque ipsa quod eius, ipsam provident magnam.</p>
             <p id="p1">Chicken</p>
         </div>
         <div class="col-lg-4 col-md-6 col-sm-12" id="container">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ratione corrupti, laboriosam, ullam nemo fugiat iusto fuga blanditiis ut, ipsa qui! Voluptates autem aperiam quasi sed voluptate molestias dignissimos inventore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ratione corrupti, laboriosam, ullam nemo
+                fugiat iusto fuga blanditiis ut, ipsa qui! Voluptates autem aperiam quasi sed voluptate molestias
+                dignissimos inventore.</p>
             <p id="p2">Beef</p>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12" id="container">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit pariatur adipisci iusto esse at architecto quidem dignissimos, ipsa, necessitatibus illo nobis corporis debitis velit sapiente! Suscipit sequi ducimus similique?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora impedit pariatur adipisci iusto esse at
+                architecto quidem dignissimos, ipsa, necessitatibus illo nobis corporis debitis velit sapiente! Suscipit
+                sequi ducimus similique?</p>
             <p id="p3">Sushi</p>
         </div>
     </div>
+     <!-- javascript -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>
