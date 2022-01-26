@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First page</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: #FFFFFF;
+            font-family: 'roboto';
+            font-size: 12pt;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            padding: 0;
+            color: #404040;
+        }
+
+        p,
+        ol,
+        ul {
+            margin-top: 0px;
+        }
+
+        p {
+            line-height: 180%;
+        }
+
+        ol,
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        .container {
+            margin: 0px auto;
+            width: 1200px;
+        }
+
+        header {
+            overflow: hidden;
+        }
+
+        #top-header {
+            text-align: center;
+            height: 60px;
+        }
+
+        #logo {
+            float: left;
+            padding: none;
+            margin: none;
+            height: 100px;
+            width: 26%;
+            font-size: 3em;
+            color: tomato;
+            margin-top: 9px;
+            text-shadow:  4px 4px 4px rgb(4, 216, 99);
+            /* border: 1px solid black;
+            padding: 5px;
+            height: 100%;
+            background-color: #0074d9;; */
+        }
+
+        #menu {
+            float: right;
+            width: 70%;
+            height: 100%;
+            margin: none;
+
+        }
+
+        #menu ul {
+            text-align: center;
+            float: right;
+            margin: none;
+            background-color: #0074d9;
+            margin-left: 5px;
+
+        }
+
+        #menu li {
+            display: inline-block;
+            margin: none;
+            padding: none;
+        }
+
+        #menu li a,
+        #menu li span {
+            display: inline-block;
+            padding: 0em, 1.5em;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            line-height: 60px;
+        }
+
+        #menu li a {
+            color: #FFF;
+            margin: 5px;
+
+        }
+
+        #menu li:hover a,
+        #menu li:hover span {
+            background-color: #FFF;
+            color: #0074d9;
+            border-left: 1px solid #0074d9;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        #header-image-menu {
+            top: -20px;
+            position: relative;
+
+        }
+
+        #header-image-menu img {
+            width: 100%;
+            margin: none;
+            padding: none;
+        }
+
+        #welcome {
+            overflow: hidden;
+            width: 1000px;
+            margin: 0px auto;
+        }
+
+        #welcome #title {
+            margin-top: 20px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #welcome p {
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        #section-2 {
+            overflow: hidden;
+            margin-top: 5em;
+            padding-top: 1em;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .row #column-1,
+        .row #column-2,
+        .row #column-3 {
+            float: left;
+            width: 320px;
+            padding: 80px 40px 80px 40px;
+        }
+
+        .column-title h2 {
+            margin: 1em 0em;
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+
+        .button {
+            text-decoration: none;
+            border: 2px solid #4CAF50;
+            padding: 16px 32px;
+            background-color: #4CAF50;
+            text-align: center;
+            font-size: 16px;
+            display: inline-block;
+            color: white;
+            margin: 4px 2px;
+            /* -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s; */
+            cursor: pointer;
+            border-radius: 10px;
+        }
+
+        .button:hover {
+            background-color: white;
+            color: #4CAF50;
+            border-radius: 10px;
+        }
+
+        .search {
+            margin: 10px;
+            padding: 3px;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- headre menu of the page -->
+    <header>
+        <!-- top headre containg logo and navigation bar -->
+        <div id="top-header">
+            <div id="logo">
+                <span>_SUKHSAM_</span>
+            </div>
+            <!-- navigation menu  -->
+            <nav>
+                <div id="menu">
+                    <ul>
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Products</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><input type="text" id="search">Search</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="header-image-menu">
+            <img src="slider.jpg" alt="">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div id="welcome">
+                <h1 id="title">Welcome to our website</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae animi debitis voluptatibus
+                    molestias reiciendis, quia voluptatum laboriosam, harum consequatur illo cupiditate. Consequatur
+                    adipisci voluptatibus vero! Minima atque nesciunt tempora tenetur delectus magni illum, ipsam porro
+                    culpa, illo ab! Velit mollitia esse alias at minima iure consequuntur corporis possimus culpa sed,
+                    iste porro vel fugiat atque sit? Sit sint nesciunt quidem. Modi repellat ex vero corrupti nostrum
+                    reiciendis officiis omnis velit minima quod, cupiditate ipsa quibusdam necessitatibus quo vel
+                    eveniet quas commodi. Commodi debitis eligendi quo perspiciatis est, officiis cumque excepturi
+                    laudantium, nesciunt corporis voluptatem eaque velit quod officia quam voluptate neque eum autem
+                    mollitia? Architecto illum necessitatibus autem quaerat temporibus perspiciatis magni perferendis
+                    laudantium dolores, delectus explicabo doloremque minima velit ullam ipsam nisi repellat? Iste nam
+                    possimus est dignissimos repellat eos autem, voluptatem fugiat recusandae vitae dolorum sint
+                    repellendus deserunt, culpa quo error asperiores reiciendis animi id placeat. Accusamus itaque
+                    magnam dolorum porro eligendi commodi vel voluptatibus ex quas voluptas ab quod expedita,
+                    perspiciatis quisquam sunt autem consequuntur reiciendis mollitia aliquid quam nesciunt ipsum.
+                    Doloremque
+                </p>
+            </div>
+        </section>
+        <!-- section 2 main contain  -->
+        <section class="container" id="section-2">
+            <div class="row">
+                <div id="column-1">
+                    <div class="column-title">
+                        <h2>Our Services</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam omnis quis voluptatem aperiam lo
+                        asperiores?</p>
+                    <a href="#" target="_blank" class="button">Learn More</a>
+                </div>
+                <div id="column-2">
+                    <div class="column-title">
+                        <h2>Products</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Temporibus, eligendi. Dolores, voluptas.</p>
+                    <a href="#" class="button" target="_blank">Learn More</a>
+                </div>
+                <div id="column-3">
+                    <div class="column-title">
+                        <h2>Electronics Products</h2>
+                    </div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse dicta itaque rem accusantium earum
+                        eos!</p>
+                    <a href="#" target="_blank" class="button">Learn More</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
