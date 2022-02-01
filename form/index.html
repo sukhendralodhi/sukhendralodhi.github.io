@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2em;
+        }
+        #main{
+            background-color: lightgoldenrodyellow;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        h1{
+            font-size: 1.5em;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        form{
+            margin: auto;
+            width: 70%;
+            border: 1px solid #ccc;
+            border-radius: 1em;
+        }
+        #form{
+            background-color: white;
+        }
+        fieldset{
+            border: 1px solid lightgray;
+            margin: 10px;
+        }
+        legend{
+            font-weight: 700;
+        }
+        #number{
+            width: 150px;
+        }
+        div + div{
+            margin-top: 1em;
+        }
+        input,textarea{
+            width: 200px;
+            border: 1px solid #999;
+        }
+        input:focus, textarea:focus{
+            border-color: orangered;
+        }
+        textarea{
+            vertical-align: top;
+            height: 5em;
+            resize: vertical;
+        }
+        /* .button{
+            padding-left: 90px;
+        } */
+        button{
+            margin: .5em;
+            font-size: 1em;
+            text-transform: capitalize;
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #sumbitbutton{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <form action="form-page" id="form">
+            <h1 id="title">Application for Permission To Date My Daughter</h1>
+            <p id="description"><b>Note:</b>Form is to be completed atleast 21 days prior to date</p>
+            <fieldset>
+                <!-- 
+                    
+                    input field  
+                
+                -->
+                <legend>Personal Details:</legend>
+                <div>
+                    <label for="name" id="name-label">Name:</label>
+                    <input type="text" required id="name" name="user_name" placeholder="Enter Name Here">
+                </div>
+                <div>
+                    <label for="adress" id="adress-label">Adress:</label>
+                    <input type="adress" required id="adress" name="user_adress" placeholder="Enter Your Adress Here">
+                </div>
+                <div>
+                    <label for="email" id="email-label">Email:</label>
+                    <input type="email" required id="email" name="user_email" placeholder="Enter Your Email Here">
+                </div>
+                <div>
+                    <label for="phone" id="number-label">Phone Number:</label>
+                    <input type="number" id="number" name="user_number" placeholder="Enter 10 Digit Number Here" min="1" max="9" required>
+                </div>
+                <div>
+                    <label for="iq" id="iq-label">IQ:</label>
+                    <input type="number" name="iq_number" required placeholder="Enter Iq:">
+                </div>
+
+                <!--
+                    radio button
+                -->
+                <div>
+                    <label for="gender">Gender:</label>
+                    <p>
+                        <input type="radio" name="gender" value="male" checked>Male <br>
+                        <input type="radio" name="gender" value="female" checked>Female <br>
+                        <input type="radio" name="gender" value="other" checked>Other
+                    </p>
+                </div>
+                <!--
+                    date
+                -->
+                <div>
+                    <label for="date">Date Of Proposed Outing:</label>
+                    <input type="date" name="bday">
+                </div>
+            </fieldset>
+            <!--
+                Chekbox
+            -->
+            <fieldset>
+                <label for="gender">Check All That Apply</label>
+                <p>
+                    <input type="checkbox" name="tatto" value="tatto" >I have tattoos or piercings <br>
+                    <input type="checkbox" name="age" value="car">I own a panel van or V8ute <br>
+                    <input type="checkbox" name="work" value="work">I work full-time <br>
+                    <input type="checkbox" name="rich" value="rich">My Parents are rich <br>
+                    <input type="checkbox" name="loc" value="loc">Ia the date at a well lit public location <br>
+                </p>
+            </fieldset>
+            <!--
+                Dropdown menu
+            -->
+            <fieldset>
+                <div>
+                    <label for="politics">Political persuasion:</label>
+                    <select name="" id="dropdown">
+                        <option value="left">Left Wing</option>
+                        <option value="right">Right Wing</option>
+                        <option value="conservative">Conservative</option>
+                        <option value="nazi">Nazi</option>
+                    </select>
+                    <label for="politics">Education lavel completed:</label>
+                    <select name="" id="dropdown2">
+                        <option value="university">University</option>
+                        <option value="college">College</option>
+                        <option value="secondry">High</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Easy section</legend>
+                <div>
+                    <label for="msg"></label>
+                    <p>In 50 words or more explain why you want to date my daughter</p>
+                    <textarea name="user_msg" id="msg" cols="30" rows="10" placeholder="Enter Text Here"></textarea>
+                </div>
+                <div>
+                    <label for="msg">Please upload contact details for two refrences</label><br>
+                    <textarea name="user_msg" id="msg2" cols="30" rows="10" placeholder="Enter Text Here"></textarea>
+                </div>
+                <p>Upload Police Clearance Certificate, Bnak statement and medical certificates here:
+                    <button>Attach File</button>
+                </p>
+            </fieldset>
+            <div id="sumbitbutton">
+                <button type="submit" id="submit">Send Your Application</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
