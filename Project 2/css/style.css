@@ -350,12 +350,17 @@
         /* responsive for mobile  */
         
         @media (max-width: 800px) {
+            body {
+                margin: 0;
+                padding: 0;
+            }
             /* navigation */
             #navbar {
                 flex-direction: column;
             }
             #navbar ul li a {
                 font-size: 1rem;
+                padding: 0px 7px;
             }
             /* home section  */
             .h-primary {
@@ -382,12 +387,13 @@
             }
             /* client */
             #our-client {
-                margin-top: 0px;
+                margin-top: 130px;
             }
             #client {
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
+                margin-top: 10px;
             }
             /* adress  */
             #implink {
@@ -397,6 +403,20 @@
             /* form  */
             #contact-form form fieldset {
                 width: 300px;
+            }
+            #contact-form form legend {
+                margin: 26px;
+            }
+            #contact-form form label {
+                margin-left: 48px;
+                padding: 7px;
+            }
+            #contact-form form .btn2 {
+                margin-left: 130px;
+            }
+            #contact-form form textarea {
+                font-size: 1.2rem;
+                margin-left: 21px;
             }
             /* adress */
             .div33 {
