@@ -1,0 +1,61 @@
+/* navigation */
+
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    /* padding: 0px 7px; */
+    font: 0.5rem;
+}
+
+
+/* home section  */
+
+.h-primary {
+    font-size: 1rem;
+    padding: 12px;
+    margin-top: 150px;
+}
+
+#home {
+    height: 627px;
+}
+
+#home p {
+    font-size: 0.5rem
+}
+
+
+/* services */
+
+
+/*
+.services-container {
+}
+ margin-top: 0px; */
+
+#services {
+    flex-direction: column;
+}
+
+#services .box {
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+
+
+/* client */
+
+#client {
+    flex-wrap: wrap;
+}
+
+
+/* adress  */
+
+#implink {
+    flex-wrap: wrap;
+    width: 100%;
+}
