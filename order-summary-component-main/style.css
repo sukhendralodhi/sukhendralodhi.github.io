@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 110vh;
+}
+
+
+/* main container of page  */
+
+.container {
+    background-color: white;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px hsl(228, 45%, 44%, 0.15);
+}
+
+.container h1 {
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.container p {
+    line-height: 1.6;
+    color: hsl(224, 23%, 55%);
+}
+
+.container #hero {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.container p.desc {
+    padding: 0 40px;
+}
+
+
+/* background image  */
+
+.bg-image {
+    background: url('./images/pattern-background-mobile.svg') no-repeat center/cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+
+/* price tag design  */
+
+.container .pricing {
+    margin: 20px auto;
+    padding: 10px;
+    background-color: hsl(225, 100%, 98%);
+    width: 60%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .music-plan {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .pricing .music-plan img {
+    margin-right: 20px;
+}
+
+
+/* button design css code  */
+
+.btn {
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.btn-change {
+    background-color: transparent;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+
+.btn-change:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    padding: 10px 70px;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-secondary:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* media portion for desktop version */
+
+@media (min-width: 768px) {
+    .bg-image {
+        background: url('./images/pattern-background-desktop.svg') no-repeat center/cover;
+        height: 50vh;
+    }
+    .container {
+        width: 500px;
+    }
+}
