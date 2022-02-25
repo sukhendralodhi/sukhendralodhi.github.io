@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Inter:wght@400;700&family=Lexend+Deca&family=Lora:ital,wght@1,500&family=Outfit:wght@400;700&family=Oxygen+Mono&family=Poppins:wght@300;400;500&family=Quintessential&family=Red+Hat+Display:ital,wght@0,700;0,900;1,500&family=Redressed&family=Rowdies&family=Supermercado+One&display=swap"
+        rel="stylesheet">
+
+    <!-- external css  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- second page css  -->
+    <link rel="stylesheet" href="image.css">
+    <title>css layout</title>
+</head>
+
+<body>
+
+    <!-- mobile navigation  -->
+    <div class="mobile-navigation" id="mobile-navigation">
+        <!-- logo -->
+        <div class="mobile-navigation-header">
+            <img class="logo" src="logo/logo.jpg" alt="logo" width="45px">
+
+            <!--close button  -->
+            <div class="close-button" onclick="toggleMobileNavigation()">
+                <button>
+                    <i class="fa fa-close"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- navigation for mobile  -->
+        <a href="index.html" class="mobile-navigation-items mobile-navigation-items-active">Home</a>
+        <a href="" class="mobile-navigation-items">About</a>
+        <a href="" class="mobile-navigation-items">Services</a>
+        <a href="" class="mobile-navigation-items">Contact</a>
+    </div>
+
+    <!-- navigation & logo for desktop -->
+    <div id="container">
+        <header>
+
+            <!-- desktop logo  -->
+
+            <img class="logo" src="logo/logo.jpg" alt="logo" width="45px">
+
+            <!-- desktop navigation  -->
+
+            <nav class="navigation">
+                <a href="index.html" class="navigation-items navigation-items-active">Home</a>
+                <a href="" class="navigation-items">About</a>
+                <a href="" class="navigation-items">Services</a>
+                <a href="" class="navigation-items">Contact</a>
+            </nav>
+
+            <!-- mobile button  -->
+            <div class="mobile-menu-button" onclick="toggleMobileNavigation()">
+                <button>
+                    <i class="fa fa-reorder"></i>
+                </button>
+            </div>
+            <!-- desktop button main  -->
+            <button class="navigation-button">
+                Get started
+            </button>
+        </header>
+
+        <!-- main content & image -->
+        <h1 class="text-center" id="heading">Best Friends Forever</h1>
+        <div class="image-container">
+            <div class="box">
+                <img src="image/1.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end.</h1>
+                <p class="text-center">“I like to listen. I have learned a great deal from listening carefully. Most people never listen.”</p>
+                <button class="btn">Instagram Link<button>
+            </div>
+
+            <div class="box">
+                <img src="image/2.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end.</h1>
+                <p class="text-center">“One loyal friend is worth ten thousand relatives.” </p>
+                <button class="btn">Instagream Link</button>
+            </div>
+
+            <div class="box">
+                <img src="image/9.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end.</h1>
+                <p class="text-center">“A single rose can be my garden… a single friend, my world.” </p>
+                <button class="btn">Instagream Link</button>
+            </div>
+
+            <div class="box">
+                <img src="image/4.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end..</h1>
+                <p class="text-center">“As much as a BFF can make you go WTF, there’s no denying we’d be a little less rich without them.”</p>
+                Instagram link</button>
+            </div>
+
+            <div class="box">
+                <img src="image/5.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end..</h1>
+                <p class="text-center">“Anything is possible when you have the right people there to support you.”</p>
+                Instagram link</button>
+            </div>
+
+            <div class="box">
+                <img src="image/6.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end..</h1>
+                <p class="text-center">“A true friend never gets in your way unless you happen to be going down.”</p>
+                Instagram link</button>
+            </div>
+
+            <div class="box">
+                <img src="image/7.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end.</h1>
+                <p class="text-center">“Don’t make friends who are comfortable to be with. Make friends who will force you to lever yourself up.”</p>
+                <button class="btn">Instagram link</button>
+            </div>
+
+            <div class="box">
+                <img src="image/8.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end.</h1>
+                <p class="text-center">“Friendship is born at that moment when one person says to another, ‘What! You too? I thought I was the only one.”</p>
+                <button class="btn">Instagram link</button>
+            </div>
+
+            <div class="box">
+                <img src="image/3.jpg" alt="">
+                <h1 class="text-center">Friends ‘till the end.</h1>
+                <p class="text-center">“Real friendship is when your friend comes over to your house and then you both just take a nap.”</p>
+                <button class="btn">Instagram link</button>
+            </div>
+
+        </div>
+
+
+        <!-- footer section  -->
+
+        <footer>
+
+            <!-- social media links  -->
+            <div class="social">
+                <a href="" class="socials--items"><i class="fa fa-instagram"></i></a>
+                <a href="" class="socials--items"><i class="fa fa-facebook"></i></a>
+                <a href="" class="socials--items"><i class="fa fa-twitter"></i></a>
+            </div>
+
+            <!-- owner name  -->
+            <span>(S.S. Lodhi)</span>
+        </footer>
+    </div>
+    <script>
+        function toggleMobileNavigation() {
+            var element = document.getElementById("mobile-navigation");
+
+            if (element.classList.contains("mobile-navigation__open")) {
+                element.classList.contains("mobile-navigation__open");
+            } else {
+                element.classList.add("mobile-navigation__open");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
