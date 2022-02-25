@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css grid area</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-areas: 'navbar navbar navbar navbar ' 'section section section aside' 'footer footer footer footer';
+            gap: 0.5rem;
+        }
+        
+        #navbar {
+            display: flex;
+            grid-area: navbar;
+            background-color: azure;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 16px;
+            padding: 7px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px black;
+        }
+        
+        #section {
+            grid-area: section;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 16px;
+            margin-left: 25px;
+            box-shadow: 0 0 10px black;
+        }
+        
+        #aside {
+            grid-area: aside;
+            background-color: azure;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px black;
+            margin-right: 10px;
+        }
+        
+        footer {
+            grid-area: footer;
+        }
+        
+        #navbar img {
+            width: 100px;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        
+        #navbar nav {
+            display: inline-block;
+            text-decoration: none;
+            margin-top: 25px;
+        }
+        
+        #navbar nav a {
+            padding-right: 7px;
+        }
+        
+        .box {
+            width: 320px;
+            padding: 15px;
+            background-color: rgb(221, 220, 217);
+            margin: 10px;
+            border-radius: 18px;
+            box-shadow: 0 0 10px black;
+        }
+        
+        .box img {
+            width: 100%;
+            border-radius: 18px;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            background-color: cornsilk;
+            box-shadow: 0 0 10px black;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            padding: 24px;
+        }
+        
+        .footer-box {
+            margin-right: 20px;
+            margin-left: 40px;
+            padding: 12px 16px;
+        }
+        
+        #brand {
+            font-size: 25px;
+            margin-top: 20px;
+            margin-right: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar" class="item">
+            <img src="http://logok.org/wp-content/uploads/2014/05/Total-logo-earth-880x660.png" alt="">
+
+            <span id="brand">Photo Gallery</span>
+
+            <nav>
+                <a href="">Home</a>
+
+
+                <a href="">About</a>
+
+
+                <a href="">Services</a>
+
+
+                <a href="">Contact</a>
+
+            </nav>
+            <!-- <input type="text" placeholder="search"> -->
+            <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+
+        </div>
+        <div id="section" class="item">
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x800/?baby" alt=""></img>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptates. Assumenda itaque magnam dolor repellendus.</p>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x800/?dog" alt=""></img>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptates. Assumenda itaque magnam dolor repellendus.</p>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x800/?cat" alt=""></img>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptates. Assumenda itaque magnam dolor repellendus.</p>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x800/?girl" alt=""></img>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptates. Assumenda itaque magnam dolor repellendus.</p>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x800/?cow" alt=""></img>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptates. Assumenda itaque magnam dolor repellendus.</p>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/1600x800/?river" alt=""></img>
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, voluptates. Assumenda itaque magnam dolor repellendus.</p>
+            </div>
+        </div>
+
+        <div id="aside" class="item">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam earum libero quas qui corrupti repellat laborum eius consequatur. Excepturi harum deserunt labore molestias id vitae, iure animi <br> suscipit quidem perferendis. Nostrum quidem
+            expedita, maiores enim sapiente fuga, amet neque praesentium aperiam porro, nihil distinctio aliquid quibusdam! Expedita sed dolorum nam!
+        </div>
+        <footer class="item">
+            <div class="footer-container">
+                <div class="footer-box">
+                    <h3>Adress:</h3>
+                    <address>
+                        236 C Gandhi nagar Gwalior <br>
+                        Madhya Pradesh 474002
+                    </address>
+                </div>
+                <div class="footer-box">
+                    <h3>Contact:</h3>
+                    <span>Email: abc@gmail.com</span> <br>
+                    <span>Phone: 123456789</span>
+                </div>
+            </div>
+        </footer>
+
+
+
+</body>
+
+</html>
