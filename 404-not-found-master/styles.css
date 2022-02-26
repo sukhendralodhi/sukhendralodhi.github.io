@@ -1,0 +1,76 @@
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                
+                .container {
+                    padding: 20px;
+                    margin: auto;
+                    margin-top: 30px;
+                }
+                
+                .side-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .side-image img {
+                    width: 250px;
+                    text-align: center;
+                }
+                
+                .text {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .text h1 {
+                    margin-top: 50px;
+                    text-align: center;
+                    font-family: 'Big Shoulders Display', cursive;
+                }
+                
+                .text p {
+                    text-align: center;
+                    margin-top: 20px;
+                }
+                
+                .text button {
+                    margin-top: 30px;
+                }
+                
+                .text .btn {
+                    padding: 12px 18px;
+                    background-color: #2c2626;
+                    color: #fff;
+                    border: none;
+                }
+                
+                .text .btn:hover {
+                    background-color: #fff;
+                    color: #2c2626;
+                }
+                
+                h6 {
+                    align-items: center;
+                    text-transform: uppercase;
+                    margin-top: 44px;
+                    font-size: 1rem;
+                    margin-left: 144px;
+                    font-family: 'Big Shoulders Display', cursive;
+                }
+                
+                @media only screen and (min-width: 992px) {
+                    .container {
+                        width: 550px;
+                        display: flex;
+                        justify-content: center;
+                    }
+                    .text p {
+                        padding: 24px;
+                    }
+                }
