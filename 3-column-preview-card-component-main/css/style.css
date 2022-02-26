@@ -1,0 +1,100 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body,
+    button {
+        font-family: "Lexend Deca", sans-serif;
+        background-color: hsl(0, 0%, 95%);
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .box {
+        color: hsl(0, 0%, 95%);
+        padding: 30px;
+    }
+    
+    .box h3 {
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-family: 'Big Shoulders Display', cursive;
+    }
+    
+    .box p {
+        margin-bottom: 30px;
+        font-size: 12px;
+        line-height: 1.6;
+        opacity: 76%;
+    }
+    
+    .box .btn {
+        padding: 10px 20px;
+        border-radius: 30px;
+        background-color: hsl(0, 0%, 95%);
+        border: 2px solid #fff;
+        cursor: pointer;
+    }
+    
+    .btn:hover {
+        background-color: transparent;
+        color: hsl(0, 0%, 95%) !important;
+    }
+    
+    .box img {
+        margin-bottom: 20px;
+    }
+    
+    #btnId1 {
+        color: hsl(31, 77%, 52%);
+    }
+    
+    #btnId2 {
+        color: hsl(184, 100%, 22%);
+    }
+    
+    #btnId3 {
+        color: hsl(179, 100%, 13%);
+    }
+    
+    #box1 {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0;
+    }
+    
+    #box2 {
+        background-color: hsl(184, 100%, 22%);
+    }
+    
+    #box3 {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+    }
+    
+    @media only screen and (min-width: 992px) {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 900px;
+            min-height: 100vh;
+            margin: auto;
+        }
+        #box1 {
+            border-radius: 10px 0 0 10px;
+        }
+        #box3 {
+            border-radius: 0 10px 10px 0;
+        }
+        .box {
+            padding: 45px;
+        }
+        .box p {
+            margin-bottom: 80px;
+        }
+    }
