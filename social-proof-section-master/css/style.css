@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.main-container {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+/* upper text section css */
+
+.text {
+    text-align: center;
+    margin: 18px 12px;
+    /* max-width: 500px; */
+    /* line-height: 2rem; */
+}
+
+.text h1 {
+    margin: 25px 0px 45px 0px;
+    padding: 0px 35px 0px 35px;
+    color: hsl(300, 43%, 22%);
+}
+
+.text p {
+    margin: 25px 0px 45px 0px;
+    padding: 0px 35px 0px 35px;
+}
+
+
+/* rating card css */
+
+.rating-card {
+    /* max-width: 500px; */
+    background-color: hsl(300, 24%, 96%);
+    padding: 12px;
+    margin: 2px 22px 17px 22px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.rating-card p {
+    margin-top: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+
+/* card css */
+
+.main-card {
+    margin: 20px 10px;
+}
+
+.card {
+    background-color: hsl(300, 43%, 22%);
+    padding: 34px;
+    margin: 12px;
+    border-radius: 8px;
+    /* max-width: 500px; */
+}
+
+
+/* card headings  */
+
+.card .white-heading {
+    color: hsl(0, 0%, 100%);
+}
+
+.card .pink-heading {
+    color: hsl(333, 80%, 67%);
+    line-height: 2rem;
+}
+
+
+/* paragraph of card  */
+
+.card p {
+    color: hsl(0, 0%, 100%);
+    margin: 14px 6px;
+}
+
+
+/* design card */
+
+.iamge-and-heading {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* card image css  */
+
+.card-image img {
+    width: 30px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+@media (min-width:968px) {
+    .main-container {
+        max-width: 100%;
+        margin: 60px 80px 60px 80px;
+    }
+    .upper-section {
+        display: flex;
+        justify-content: space-between;
+    }
+    .rating-card {
+        display: flex;
+    }
+    .rating-card img {
+        width: 15px;
+        margin-left: 10px;
+    }
+    .rating-card p {
+        margin-left: 10px;
+    }
+    .main-card {
+        display: flex;
+        margin: auto;
+        background: url(../images/bg-pattern-bottom-desktop.svg);
+    }
+    .main-card div:first-child {
+        margin-bottom: 20px;
+    }
+    .text {
+        max-width: 500px;
+        margin: 0px 0px 80px 0px;
+        padding: 0px 47px 0px 47px;
+        background: url(..//images/bg-pattern-top-desktop.svg) no-repeat;
+    }
+    /* rating  */
+    #rating-card-1 {
+        margin-right: 120px;
+    }
+    #rating-card-2 {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    #rating-card-3 {
+        margin-left: 120px;
+    }
+    /* card  */
+    #card-1 {
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+    #card-3 {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .text p {
+        margin: 0;
+    }
+    .text h1 {
+        margin: 0;
+    }
+}
