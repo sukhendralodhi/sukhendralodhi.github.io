@@ -1,0 +1,204 @@
+
+/* Css reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header section  */
+.header {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ /* left column css  */
+.col-1 {
+    flex-basis: 43%;
+    flex-grow: 1;
+    background: url(background3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    color: #fff;
+}
+
+/* Right Column css  */
+.col-2 {
+    flex-basis: 57%;
+    flex-grow: 1;
+    padding: 40px 80px;
+    background-image: url(music.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+/* Logo and Search icon css  */
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* logo css */
+.logo {
+    width: 80px;
+    cursor: pointer;
+}
+
+/* search icon  */
+.search-icon {
+    width: 25px;
+    cursor: pointer;
+}
+
+/* left side text css  */
+.left-text {
+    width: 70%;
+    margin: 180px auto 0;
+}
+
+.left-text h2 {
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+.left-text p {
+    font-size: 12px;
+    line-height: 24px;
+    margin: 30px 0;
+}
+
+/* play button css  */
+.left-text a img {
+    width: 60px;
+    margin-right: 20px;
+}
+.left-text a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 30px;
+    transition: transform 0.5s;
+}
+.left-text a:hover {
+    transform: translateY(-6px);
+}
+
+/* Right side Section css  */
+.col-2 ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.col-2 ul li a {
+    display: inline-block;
+    color: #333;
+    text-decoration: none;
+    padding-bottom: 0.25rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Underline in navigation css */
+.col-2 ul li a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ff5a5a;
+    transition: width 0.5s ease-in-out;
+
+}
+.col-2 ul li a:hover::before {
+    width: 100%;
+}
+
+
+
+/* right text css  */
+.right-text {
+    margin-top: 160px;
+}
+.right-text h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-shadow: 0 7px 6px black;
+}
+.right-text h3 {
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #333;
+}
+.right-text p {
+    font-size: 15px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+/* Explore more button css  */
+.right-text a {
+    text-decoration: none;
+    display: inline-block;
+    background: #ff5a5a;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 15px 50px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 10px rgba(255, 90, 90, 0.7);
+    transition: transform 0.5s;
+}
+.right-text a:hover {
+    transform: translateY(-6px);
+}
+
+/* social icon  */
+.social-icon {
+    margin-top: 11rem;
+}
+.social-icon a {
+    padding: 10px;
+    font-size: 25px;
+}
+.social-icon a:hover {
+    color: rgb(145, 73, 173);
+}
+
+@media (max-width: 971px) {
+    .col-2 ul {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+    }
+    .col-1 {
+        width: 100%;
+        flex-basis: auto;
+    }
+    .right-text {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .right-text a {
+        font-size: 11px;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+}
